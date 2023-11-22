@@ -1,0 +1,53 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    color:white
+}
+#nav{
+    background-color: black;
+    height:70px;
+    padding-top: 30px;
+    
+    
+    
+
+
+}
+#a{
+    color: black;
+}
+a{
+    margin-right: 300px;
+    text-decoration: none;
+    
+}
+#amazon{
+    margin-left: 25px;
+    color:yellowgreen;
+    
+}
+button{
+    color:black
+}
+footer{
+    background-color: black;
+    color:white;
+    text-align: center;
+    height: 100px;
+    padding-top: 30px;
+}
+#container{
+    height:360px;
+    text-align: center;
+    padding-top: 100px;
+    
+    
+.c{
+    background-color: brown;
+    height:100px;
+    width: 100px;
+    /* margin:10px 10px 10px 600px; */
+    display: inline-block;
+    
+}
+}
