@@ -7,26 +7,113 @@ html,body{
     height: 100%;
     width: 100%;
 }
-#parent{
+#main{
     height: 100%;
     width: 100%;
     /* background-color: red; */
-    display: grid;
-
-    grid-template-columns: 50% 50%;
-    grid-template-columns: 50%;
-
+    display: flex;
 }
-#child1{
-    background-color: green;
+
+#left{
     width: 40%;
+    height: 100%;
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding:  50px
+}
+#left h1{
+    font-size: 60px;
+    letter-spacing: -0.7px;
+}
+#color {
+    display: flex;
+    gap: 5px;
+    margin-left: 5px;
+}
+
+#color .elem{
+    padding: 5px;
+    /* background-color: red; */
+    border-radius: 50%;
+}
+.elem:nth-child(3){
+    background-color: maroon;
+}
+.elem:nth-child(2){
+    background-color: yellow;
+}
+#leftbottom #details{
+    margin-top: 30px;
+}
+#leftbottom p{
+    /* background-color:yellow; */
+    width: 40vh;
 
 }
-#child2{
-    background-color: blue;
+#leftbottom{
+    padding-top: 10vh;
 }
-@media (max-width: 600px) {
-      #parent{
-        background-color: green;
-      }
+
+#right{
+    width: 50%;
+    height: 100%;
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10%;
+    position: relative;
+
+}
+#pic{
+    width: 50%;
+    height: 80%;
+    /* background-color: pink; */
+    background-image: url('https://media.istockphoto.com/id/997770954/photo/handsome-young-businessman.jpg?s=1024x1024&w=is&k=20&c=9KrCFNF8FVX0P55U5eLZIXpzlflOoZRauTux9XbqVcs=');
+    background-size: cover;
+    background-position: center;
+}
+#pichead{
+    width: 50%;
+    height: 10%;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#bottomhead{
+    background-color: white;
+    width: 50%;
+    rotate: -90deg;
+    transform-origin: 0 0;
+    position: absolute;
+    top: 75%;
+    left: 20%;
+}
+#bottomhead h3{
+    font-size: 1.5vw;
+}
+
+@media (max-width:950px){
+#main{
+    display: flex;
+    flex-direction: column;
+}
+#left{
+    width: 100%;
+    height: 30%;
+    padding-top: 20%;
+    
+}
+#left h1{
+    line-height: 10px;
+}
+
+#right{
+  width: 100%;
+  height: 70%;
+}
 }
