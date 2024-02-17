@@ -34,6 +34,9 @@ html,body{
     border-right: 2px solid black;
     /* background-color:blue; */
 }
+#chupa{
+    display: none;
+}
 #div2{
     display: flex;
     align-items: center;
@@ -126,7 +129,7 @@ html,body{
     display: inline-block;
     padding: 20px;
     animation-name: anime;
-    animation-duration: 3s;
+    animation-duration: 5s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
@@ -142,6 +145,7 @@ html,body{
     border-radius: 50%;
     margin: 15px;
     object-fit: cover;
+    object-position: center;
 }
 
 
@@ -174,6 +178,7 @@ html,body{
     width: 100%;
     background-image: url('https://media.istockphoto.com/id/1202142519/photo/macho-man.webp?b=1&s=170667a&w=0&k=20&c=j6U-Lesfyl9Fn_5T6PUd0fOCjEWa3Nzw3Kxc2Eowzb8=');
     background-size: cover;
+    object-position: center;
 }
 #page2-part2{
     height: 100%;
@@ -248,7 +253,7 @@ html,body{
 #marquee{
     white-space: nowrap;
     animation-name: move;
-    animation-duration: 6s;
+    animation-duration: 5s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
@@ -267,7 +272,156 @@ html,body{
        transform: translate(0);
     }
     to{
-       transform: translate(-100%);
+       transform: translate(calc(-100%));
     }
     
+}
+
+@media (max-width:900px) 
+{
+    #nav{
+        height: 10vh;
+        width: 100%;
+        /* background-color: red; */
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding:0 15px;
+        border: 2px solid black;
+        
+    }
+    #div1{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+        border-right: none;
+        /* background-color:blue; */
+        /* display: none; */
+    }
+    #chupa{
+        display: block;
+    }
+    #div2{
+        
+        display: none;
+    }
+    #div3{
+        
+        display: none;
+    
+        /* background-color:blue; */
+    }
+    #div4{
+        
+        display: none;
+    }
+    
+    #page2{
+        height: 60vh;
+        width: 100vw;
+        /* background-color: green; */
+        padding: 15px;
+        display: flex;
+        justify-content: space-evenly;
+        /* background-color: blue; */
+    }
+    #page2-part1{
+        height: 100%;
+        width: 45%;
+        background-color: #fff;
+        
+    }
+    #pic1
+    {
+        height: 70%;
+        width: 100%;
+        background-image: url('https://media.istockphoto.com/id/1202142519/photo/macho-man.webp?b=1&s=170667a&w=0&k=20&c=j6U-Lesfyl9Fn_5T6PUd0fOCjEWa3Nzw3Kxc2Eowzb8=');
+        background-size: cover;
+        background-position: left 40%;
+    }
+    #page2-part2{
+        height: 70%;
+        width: 45%;
+        /* background-color: pink; */
+        
+    }
+    #pic2{
+        height: 70%;
+        width: 100%;
+        background-image: url('https://media.istockphoto.com/id/1171169099/photo/man-with-crossed-arms-isolated-on-gray-background.webp?b=1&s=170667a&w=0&k=20&c=W5AFEjtmFjyyIGF40oSTOm6E0rj7AjF_zIIF-0zdVxk=');
+        background-size: cover;
+        background-position: center;
+    }
+    #lekha{
+        
+        width: 100%;
+        /* background-color: crimson; */
+        display: flex;
+        
+    }
+    #heading1{
+        height: 100%;
+        width: 50%;
+        padding: 3vh;
+        background-color: #fff;
+    }
+    #heading2{
+        height: 100%;
+        width: 50%;
+        padding: 3vh;
+    }
+    #lekha h3{
+        font-size: 2vw;
+    }
+
+    #page3{
+        /* height: 100vh; */
+        width: 100vw;
+        /* background-color: red; */
+        margin-bottom: 25px;
+    }
+    .elem{
+       height: 12vh;
+       width: 100%;
+       border-top: 2px solid black;
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       padding: 15px;
+       position: relative;
+    }
+    .elem:nth-last-child(1){
+         border-bottom: 2px solid black;
+
+    }
+    .elem h2{
+        /* background-color: red; */
+        font-size: 5vw;
+    } 
+    .elem h2:nth-last-child(1){
+        width: 60%;
+        background-color:rgba(255, 136, 0, 0.219);
+        display: flex;
+        align-items: center;
+        justify-content: end;
+    }
+    
+    .elem img{
+      height: 70px;
+      width: 70px;
+      border-radius: 50%;
+      position: absolute;
+      left: 30%;
+      opacity: 0;
+      transition: all 1s ease-in;
+    
+    }
+     .elem:hover img{
+        opacity: 1 ;
+        left: 40%;
+    }
+       
 }
