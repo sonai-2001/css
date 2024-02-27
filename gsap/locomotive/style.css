@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#page1{
+    width: 100vw;
+    height: 100vh;
+    background-color: skyblue;
+}
+#page2{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(99, 189, 99);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#image{
+    height: 80%;
+    width: 20%;
+    background-color: red;
+}
+#image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    
+}
+#page3{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(231, 203, 126);
+}
