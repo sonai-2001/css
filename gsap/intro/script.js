@@ -31,7 +31,6 @@ tl.to("#box2",{
     rotate:180,
     backgroundColor:'green',
     duration:5,
-    delay:2,
     
     })
 tl.to("#box3",{
@@ -39,6 +38,6 @@ tl.to("#box3",{
     rotate:180,
     backgroundColor:'green',
     duration:5,
-    delay:2,
+    
     
     })
