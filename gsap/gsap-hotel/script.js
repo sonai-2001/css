@@ -60,7 +60,7 @@ ScrollTrigger.refresh();
 
 
 var h1 =document.querySelectorAll('#page2 h1')
-console.log(h1)
+
 h1.forEach(function(elem){
     var clutter=''
     var h1Text=elem.textContent
